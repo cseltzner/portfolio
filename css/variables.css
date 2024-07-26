@@ -10,7 +10,6 @@
     --screen-sm: 640px;
     --screen-md: 768px;
     --screen-lg: 1024px;
-    --screen-xl: 1280px;
 
     /*******
      Spacing
@@ -95,6 +94,7 @@
   *********/
 .container {
     width: 100%;
+    margin: 0 auto;
 }
 
 @media (min-width: 640px) {
@@ -112,11 +112,5 @@
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1280px;
     }
 }
