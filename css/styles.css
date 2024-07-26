@@ -1,3 +1,62 @@
 body {
     font-family: var(--font-sans);
 }
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--spacing-4) var(--spacing-8);
+}
+
+.navbar__brand {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.navbar__brand-logo {
+    height: 35px;
+    width: 35px;
+    stroke: #000;
+}
+
+.navbar__brand-name {
+    font-weight: bold;
+    font-size: var(--font-2xl);
+    letter-spacing: 1px;
+}
+
+.navbar__nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-12);
+}
+
+@media (max-width: 768px) {
+    .navbar__nav-links {
+        gap: var(--spacing-6);
+    }
+}
+
+.navbar__nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+}
+
+.navbar__nav-action > a {
+    display: inline-block;
+}
+
+.navbar-action-icon {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media (max-width: 640px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
