@@ -88,6 +88,224 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects section -->
+      <section id="projects" class="projects">
+        <div class="projects__header">
+          <h2>Projects</h2>
+          <p>Check out my open source projects.</p>
+          <p>Feel free to contact me if you have any questions.</p>
+        </div>
+        <!-- Chips -->
+        <fieldset class="chip-fieldset chip-group">
+          <input class="chip-group__input" type="radio" name="projects" id="all" checked value="all" />
+          <label class="chip-group__label" for="all">All</label>
+      
+          <input class="chip-group__input" type="radio" name="projects" id="react" value="react" />
+          <label class="chip-group__label" for="react">React</label>
+      
+          <input class="chip-group__input" type="radio" name="projects" id="nodejs" value="nodejs" />
+          <label class="chip-group__label" for="nodejs">Node.js</label>
+      
+          <input class="chip-group__input" type="radio" name="projects" id="aspnet" value="aspnet" />
+          <label class="chip-group__label" for="aspnet">ASP.NET</label>
+      
+          <input class="chip-group__input" type="radio" name="projects" id="kotlin" value="kotlin" />
+          <label class="chip-group__label" for="kotlin">Kotlin</label>
+        </fieldset>
+
+        <!-- Project Cards -->
+        <ul class="project__card-list">
+          <!-- Alpine Luxury Suites card -->
+          <li class="project__card" data-categories="react/aspnet">
+            <a href="https://www.alpineluxurysuites.com" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/hotel-thumbnail-compressed.png" alt="Alpine Luxury Suites" />
+            </a>
+            <h3 class="card__title">Alpine Luxury Suites</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+              <div class="chip-group__disabled">ASP.NET</div>
+            </div>
+            <p class="card__description">
+              Fullstack, fully responsive hotel reservation site with fully featured bookings. Uses ASP.NET backend, Postgres database, and React frontend. Customers can book multiple suites with different check-in/check-out dates and view their order history at any time through the site.
+            </p>
+            <div class="card__btn-group">
+              <a href="https://www.alpineluxurysuites.com" target="_blank" class="card__btn">
+                <svg class="card__btn-img card__btn-img-visit" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-63ce7424ea57ea6c8380055b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="22 13 22 22 2 22 2 2 11 2"></polyline><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="14 2 22 2 22 10"></polyline><line class="cls-63ce7424ea57ea6c8380055b-1" x1="22" y1="2" x2="10" y2="14"></line></svg>
+                <p>Visit</p>
+              </a>              
+              <a href="https://github.com/cseltzner/hotel-reservation-site" target="_blank" class="card__btn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of Alpine Luxury Suites card -->
+
+          <!-- Seltzport card -->
+          <li class="project__card" data-categories="react/nodejs">
+            <a href="https://www.seltzport.com" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/seltzport_thumbnail_compressed.jpg" alt="SeltzPort" />
+            </a>
+            <h3 class="card__title">SeltzPort</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+              <div class="chip-group__disabled">Node.js</div>
+            </div>
+            <p class="card__description">
+              Fullstack photography blog created with Next.js, express, and TailwindCSS. Both the client and the server have a robust unit and integration testing suite using Jest, React Testing Library, and Supertest.
+            </p>
+            <p class="card__description">
+              Admins have the ability to add, remove, edit, and delete photos. Visit <a href="https://www.seltzport.com/admin/login" class="card__inline-link" target="_blank">the login page</a> and click "Sign in as demo admin" to sample all of the admin features available.
+            </p>
+            <div class="card__btn-group">
+              <a href="https://www.seltzport.com" target="_blank" class="card__btn">
+                <svg class="card__btn-img card__btn-img-visit" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-63ce7424ea57ea6c8380055b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="22 13 22 22 2 22 2 2 11 2"></polyline><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="14 2 22 2 22 10"></polyline><line class="cls-63ce7424ea57ea6c8380055b-1" x1="22" y1="2" x2="10" y2="14"></line></svg>
+                <p>Visit</p>
+              </a>              
+              <a href="https://github.com/cseltzner/photo-blog" target="_blank" class="card__btn card__btn-light">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of Seltzport card -->
+
+          <!-- PlanetFacts card -->
+          <li class="project__card" data-categories="react/nodejs">
+            <a href="http://seltzport.com:3000" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/planet_thumbnail_compressed.jpg" alt="PlanetFacts" />
+            </a>
+            <h3 class="card__title">PlanetFacts</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+              <div class="chip-group__disabled">Node.js</div>
+            </div>
+            <p class="card__description">
+              Fullstack social media site centered around the planets of our solar system. With a registered account, users can create discussion posts, comment on others users' posts, and reply to comments.
+            </p>
+            <div class="card__btn-group">
+              <a href="http://seltzport.com:3000" target="_blank" class="card__btn">
+                <svg class="card__btn-img card__btn-img-visit" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-63ce7424ea57ea6c8380055b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="22 13 22 22 2 22 2 2 11 2"></polyline><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="14 2 22 2 22 10"></polyline><line class="cls-63ce7424ea57ea6c8380055b-1" x1="22" y1="2" x2="10" y2="14"></line></svg>
+                <p>Visit</p>
+              </a>              
+              <a href="https://github.com/cseltzner/Planet-Site-with-Nested-Comments" target="_blank" class="card__btn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of PlanetFacts card -->
+
+          <!-- Password Generator card -->
+          <li class="project__card" data-categories="react">
+            <a href="https://cseltzner.github.io/password-generator/" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/pw_thumbnail_compressed.jpg" alt="Password Generator" />
+            </a>
+            <h3 class="card__title">Password Generator</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+            </div>
+            <p class="card__description">
+              A simple password generator with multiple customizable parameters made with React. Created using test driven development and contains a robust test suite using Jest and React Testing Library.
+            </p>
+            <div class="card__btn-group">
+              <a href="https://cseltzner.github.io/password-generator/" target="_blank" class="card__btn">
+                <svg class="card__btn-img card__btn-img-visit" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-63ce7424ea57ea6c8380055b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="22 13 22 22 2 22 2 2 11 2"></polyline><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="14 2 22 2 22 10"></polyline><line class="cls-63ce7424ea57ea6c8380055b-1" x1="22" y1="2" x2="10" y2="14"></line></svg>
+                <p>Visit</p>
+              </a>              
+              <a href="https://github.com/cseltzner/password-generator" target="_blank" class="card__btn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of Password Generator card -->
+          
+
+          <!-- Dictionary card -->
+          <li class="project__card" data-categories="react">
+            <a href="https://cseltzner.github.io/dictionary-app/" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/dictionary_thumbnail.png" alt="Seltzner's Dictionary" />
+            </a>
+            <h3 class="card__title">Seltzner's Dictionary</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">React</div>
+            </div>
+            <p class="card__description">
+              An elegant React frontend for a dictionary API. Features a light/dark mode toggle.
+            </p>
+            <div class="card__btn-group">
+              <a href="https://cseltzner.github.io/dictionary-app/" target="_blank" class="card__btn">
+                <svg class="card__btn-img card__btn-img-visit" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-63ce7424ea57ea6c8380055b-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="22 13 22 22 2 22 2 2 11 2"></polyline><polyline class="cls-63ce7424ea57ea6c8380055b-1" points="14 2 22 2 22 10"></polyline><line class="cls-63ce7424ea57ea6c8380055b-1" x1="22" y1="2" x2="10" y2="14"></line></svg>
+                <p>Visit</p>
+              </a>              
+              <a href="https://github.com/cseltzner/dictionary-app" target="_blank" class="card__btn">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of Dictionary card -->
+
+          <!-- Weather App card -->
+          <li class="project__card" data-categories="kotlin">
+            <a href="https://github.com/cseltzner/Weather" class="card__img" target="_blank">
+              <img src="static/project-thumbnails/weatherapp_compressed.jpg" alt="Weather App" />
+            </a>
+            <h3 class="card__title">Android Weather App</h3>
+            <div class="chip-group">
+              <div class="chip-group__disabled">Kotlin</div>
+            </div>
+            <p class="card__description">
+              Native Android weather application written in Kotlin. Supports saving favorite cities to view multiple area's weather at a glance. Detailed daily and hourly forecast is presented for each city. Visit the Github release section for an APK download.
+            </p>
+            <div class="card__btn-group">         
+              <a href="https://github.com/cseltzner/Weather" target="_blank" class="card__btn card__btn-single">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 496 512"
+                class="card__btn-img card__btn-img-github"
+           >
+               <path
+                   d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                </svg>
+                <p>Repository</p>
+              </a>
+            </div>
+          </li>
+          <!-- End of Weather App card -->                    
+        </ul>
+      </section>
     </main>
   </body>
 </html>

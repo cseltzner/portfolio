@@ -6,7 +6,7 @@ body {
     font-family: var(--font-sans);
 }
 
-/* Navbar Styles */
+/* Navbar Section */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -58,7 +58,7 @@ body {
     height: 25px;
 }
 
-/* Hero Styles */
+/* Hero Section */
 .hero {
     padding: var(--spacing-12) 0;
     display: grid;
@@ -89,7 +89,7 @@ body {
 
 .hero__pattern-2 {
     bottom: -1rem;
-    right: -2rem;
+    right: 15%;
 }
 
 .hero__body h1 {
@@ -106,9 +106,10 @@ body {
 }
 
 .hero__paragraph {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-9);
     line-height: 1.5;
     font-size: var(--font-lg);
+    color: var(--text-light);
 }
 
 .hero__btn-group {
@@ -133,14 +134,191 @@ body {
     background-color: #000;
 }
 
-.hero__btn-dark:hover {
-    color: #000;
-    background-color: #fff;
-}
-
 .hero__btn-light:hover {
     color: #fff;
     background-color: #000;
+}
+
+/* Projects section */
+.projects {
+    padding: var(--spacing-16) 0;
+}
+
+.projects__header {
+    text-align: center;
+}
+
+h2 {
+    font-size: var(--font-5xl);
+    font-weight: bold;
+}
+
+.projects__header > p {
+    color: #333;
+}
+
+.chip-fieldset {
+    margin-top: var(--spacing-6);
+}
+
+.chip-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-3);
+}
+
+.chip-group__input {
+    display: none;
+}
+
+.chip-group__label {
+    letter-spacing: 0.5px;
+    background-color: #eee;
+    padding: var(--spacing-2) var(--spacing-6);
+    border-radius: var(--border-rounded-full);
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+}
+
+.chip-group__label:hover {
+    background-color: #ccc;
+}
+
+.chip-group__input:checked + .chip-group__label {
+    background-color: #000;
+    color: #fff;
+}
+
+.chip-group__disabled {
+    letter-spacing: 0.5px;
+    background-color: #eee;
+    padding: var(--spacing-2) var(--spacing-6);
+    border-radius: var(--border-rounded-full);
+    user-select: none;
+    transition: all 0.15s ease-out;
+}
+
+.project__card-list {
+    margin-top: var(--spacing-12);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-24);
+}
+
+.project__card {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card__img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 350px;
+    overflow: hidden;
+}
+
+.card__title {
+    margin-top: var(--spacing-4);
+    font-size: var(--font-xl);
+    font-weight: bold;
+}
+
+.card__title + .chip-group {
+    margin-top: var(--spacing-3);
+}
+
+.card__description {
+    margin-top: var(--spacing-4);
+    line-height: 1.75;
+    color: var(--text-light);
+}
+
+.card__description:first-of-type {
+    margin-top: var(--spacing-4);
+}
+
+.card__description:last-of-type {
+    margin-bottom: var(--spacing-6);
+}
+
+.card__inline-link {
+    text-decoration: underline;
+}
+
+.card__btn-group {
+    opacity: 0;
+    transition: all 0.15s ease-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: var(--spacing-2);
+}
+
+@media (max-width: 1024px) {
+    .card__btn-group {
+        opacity: 1;
+    }
+}
+
+.project__card:hover .card__btn-group {
+    opacity: 1;
+}
+
+.card__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) var(--spacing-4);
+    border-radius: var(--border-rounded-lg);
+    border: 1px solid #000;
+    transition: all 0.15s ease-out;
+}
+
+.card__btn:first-of-type {
+    background-color: #000;
+    color: #fff;
+}
+
+.card__btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.card__btn.card__btn-single {
+    grid-column: 1 / span 2;
+    background-color: #fff;
+    color: #000;
+}
+
+.card__btn.card__btn-single:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.card__btn-img-visit {
+    color: #fff;
+    height: 16px;
+    width: 16px;
+    transition: all 0.15s ease-out;
+}
+
+.card__btn-img-github {
+    height: 24px;
+    width: 24px;
+    fill: #000;
+    transition: all 0.15s ease-out;
+}
+
+.card__btn:hover .card__btn-img-github {
+    fill: #fff;
+}
+
+.card--hidden {
+    display: none;
 }
 
 @media (max-width: 640px) {

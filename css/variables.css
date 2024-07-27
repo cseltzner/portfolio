@@ -4,12 +4,16 @@
     *****************/
     --font-sans: 'Lato', sans-serif;
 
+    --text-main: #000;
+    --text-light: #333;
+
     /********************************
      Responsive media query variables
      ********************************/
     --screen-sm: 640px;
     --screen-md: 768px;
     --screen-lg: 1024px;
+    --screen-xl: 1280px;
 
     /*******
      Spacing
@@ -112,5 +116,11 @@
 @media (min-width: 1024px) {
     .container {
         max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
     }
 }
