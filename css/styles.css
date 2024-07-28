@@ -4,8 +4,10 @@ html {
 
 body {
     font-family: var(--font-sans);
+}
+
+main {
     padding: 0 var(--spacing-4);
-    padding-bottom: var(--spacing-24);
 }
 
 /**************************
@@ -466,6 +468,11 @@ h2 {
     color: var(--text-light);
 }
 
+.contact__email > a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .contact__form {
     max-width: 450px;
     margin: 0 auto;
@@ -508,17 +515,31 @@ h2 {
     width: 14px;
 }
 
-/*****************
+/******************
+ ***** Footer *****
+ ******************/
+
+footer {
+    margin-top: var(--spacing-24);
+    display: flex;
+    justify-content: space-around;
+    padding: var(--spacing-4);
+    background-color: #f5f5f5;
+    font-size: var(--font-sm);
+}
+
+footer > a {
+    text-decoration: underline;
+}
+
+ 
+ /*****************
  ***** Misc. *****
  *****************/
 
 /* Used for contact form */
 .hidden {
     display: none !important;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 @media (max-width: 640px) {
