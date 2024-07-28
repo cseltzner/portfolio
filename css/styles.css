@@ -232,8 +232,9 @@ h2 {
 }
 
 .card__title {
-    margin-top: var(--spacing-4);
+    margin-top: var(--spacing-8);
     font-size: var(--font-xl);
+    font-style: italic;
     font-weight: bold;
 }
 
