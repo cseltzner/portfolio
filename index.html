@@ -378,6 +378,44 @@
           </div>
         </div>
        </section>
+       <section class="contact" id="contact">
+        <div class="contact__header">
+          <h2>Contact</h2>
+          <p>Feel free to reach out if you are interested in my work. I will respond as soon as possible.</p>
+          <p class="contact__email">Please email me at <a href="mailto:chase.seltz21@gmail.com" class="card__inline-link bold">chase.seltz21@gmail.com</a> or use the form below.</p>
+        </div>
+        <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="1167ec4a-b4b9-4fc7-8582-9fddb0a3b841">
+
+          <div class="contact__form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+
+          <div class="contact__form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+
+          <div class="contact__form-control">
+            <label for="message">Message</label>
+            <textarea name="message" rows="7" required></textarea>
+          </div>
+
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://seltzner.com/contactsuccess"> -->
+
+          <button type="submit" class="btn-small">
+            <div class="btn-innards">
+              <svg class="svg-small" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" width="24" height="24" color="#000000"><defs><style>.cls-6374f8d9b67f094e4896c654-1{fill:none;stroke:currentColor;stroke-miterlimit:10;}</style></defs><polygon class="cls-6374f8d9b67f094e4896c654-1" points="15 21 10.64 13.36 3 9 21 3 15 21"></polygon><line class="cls-6374f8d9b67f094e4896c654-1" x1="11" y1="13" x2="16" y2="8"></line></svg>
+              <p>Send</p>
+            </div>
+          </button>
+        </form>
+       </section>
     </main>
   </body>
 </html>

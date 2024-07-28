@@ -5,6 +5,7 @@ html {
 body {
     font-family: var(--font-sans);
     padding: 0 var(--spacing-4);
+    padding-bottom: var(--spacing-24);
 }
 
 /**************************
@@ -447,6 +448,77 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+}
+
+/***************************
+ ***** Contact section *****
+ ***************************/
+
+.contact__header {
+    margin-top: var(--spacing-36);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contact__header > p {
+    margin-top: var(--spacing-2);
+    color: var(--text-light);
+}
+
+.contact__form {
+    max-width: 450px;
+    margin: 0 auto;
+    margin-top: var(--spacing-9);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-6);
+}
+
+.contact__form input {
+    display: block;
+    width: 100%;
+    margin-top: var(--spacing-1);
+    padding: var(--spacing-2);
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: var(--border-rounded-sm);
+}
+
+.contact__form input:focus {
+    outline: 2px solid #000;
+}
+
+.contact__form textarea {
+    display: block;
+    width: 100%;
+    margin-top: var(--spacing-1);
+    padding: var(--spacing-2);
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: var(--border-rounded-sm);
+}
+
+.contact__form textarea:focus {
+    outline: 2px solid #000;
+}
+
+.svg-small {
+    height: 14px; 
+    width: 14px;
+}
+
+/*****************
+ ***** Misc. *****
+ *****************/
+
+/* Used for contact form */
+.hidden {
+    display: none !important;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 @media (max-width: 640px) {
