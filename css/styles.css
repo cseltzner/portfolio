@@ -483,9 +483,8 @@ h2 {
     display: inline-block;
 }
 
-[data-dark="true"]
-.card__inline-link::after,
-.inline-link::after {
+[data-dark="true"] .card__inline-link::after,
+[data-dark="true"] .inline-link::after {
     filter: invert(1);
 }
 
