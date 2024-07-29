@@ -1,4 +1,26 @@
 /**************************
+ * Light/Dark mode toggle *
+ **************************/
+const lightIcon = document.getElementById("light");
+const darkIcon = document.getElementById("dark");
+
+const toggleDarkMode = (/** @type {Boolean} */ darkMode) => {
+    if (darkMode) {
+        document.body.setAttribute("data-dark", "true");
+        lightIcon.classList.add("hidden");
+        darkIcon.classList.remove("hidden");
+    } else {
+        document.body.removeAttribute("data-dark");
+        darkIcon.classList.add("hidden");
+        lightIcon.classList.remove("hidden");
+    }
+}
+
+lightIcon.addEventListener("click", () => toggleDarkMode(true));
+darkIcon.addEventListener("click", () => toggleDarkMode(false));
+
+
+/**************************
  * Projects Section Chips *
  **************************/
 const projects = Array.from(
