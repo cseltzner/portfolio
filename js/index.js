@@ -9,15 +9,19 @@ const toggleDarkMode = (/** @type {Boolean} */ darkMode) => {
         document.body.setAttribute("data-dark", "true");
         lightIcon.classList.add("hidden");
         darkIcon.classList.remove("hidden");
+        localStorage.setItem("dark", "true");
     } else {
         document.body.removeAttribute("data-dark");
         darkIcon.classList.add("hidden");
         lightIcon.classList.remove("hidden");
+        localStorage.removeItem("dark");
     }
 }
 
 lightIcon.addEventListener("click", () => toggleDarkMode(true));
 darkIcon.addEventListener("click", () => toggleDarkMode(false));
+
+if (localStorage.getItem("dark") === "true") toggleDarkMode(true);
 
 
 /**************************
