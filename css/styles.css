@@ -559,6 +559,8 @@ h2 {
 footer {
     margin-top: var(--spacing-24);
     display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
     justify-content: space-around;
     padding: var(--spacing-4);
     background-color: var(--color-surface-secondary);
@@ -569,6 +571,22 @@ footer > a {
     text-decoration: underline;
 }
 
+footer > .icon-list {
+    display: flex;
+    gap: var(--spacing-2);
+}
+
+
+.footer__icon {
+    width: 25px;
+    height: 25px;
+    color: var(--color-primary);
+    fill: var(--color-primary);
+}
+
+.footer__icon > a {
+    display: inline-block;
+}
  
  /*****************
  ***** Misc. *****
