@@ -1,10 +1,23 @@
-:root {
-    /****************
-    ***** Fonts *****
-    *****************/
+body[data-dark="true"] {
+    --color-primary: #eee;
+    --color-secondary: #aaa;
+    --color-surface: #1f1f1f;
+    --color-surface-secondary: #141414;
+    --text-main: #eee;
+    --text-light: #ccc;
+}
+
+body {
+    /***************************
+    ***** Fonts and Colors *****
+    ****************************/
     --font-sans: 'Lato', sans-serif;
 
-    --text-main: #000;
+    --color-primary: #111;
+    --color-secondary: #eee;
+    --color-surface: #fff;
+    --color-surface-secondary: #f5f5f5;
+    --text-main: #111;
     --text-light: #333;
 
     /********************************

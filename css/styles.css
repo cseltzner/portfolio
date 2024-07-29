@@ -4,6 +4,8 @@ html {
 
 body {
     font-family: var(--font-sans);
+    color: var(--text-main);
+    background-color: var(--color-surface);
 }
 
 main {
@@ -28,7 +30,7 @@ main {
 .navbar__brand-logo {
     height: 35px;
     width: 35px;
-    stroke: #000;
+    stroke: var(--text-main);
 }
 
 .navbar__brand-name {
@@ -62,6 +64,8 @@ main {
 .navbar-action-icon {
     width: 25px;
     height: 25px;
+    color: var(--color-primary);
+    fill: var(--color-primary);
 }
 
 /************************
@@ -99,6 +103,10 @@ main {
     transform: skewX(-20deg);
 }
 
+[data-dark="true"] .hero__pattern {
+    background-color: #aaa;
+}
+
 .hero__pattern-1 {
     top: -1rem;
     left: -2rem;
@@ -124,8 +132,8 @@ main {
 .text-special {
     display: inline-block;
     padding: 0 var(--spacing-1);
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
 }
 
 .hero__paragraph {
@@ -152,20 +160,20 @@ main {
     display: inline-block;
     padding: var(--spacing-3) var(--spacing-9);
     font-size: var(--font-lg);
-    border: 1px solid #000;
+    border: 1px solid var(--color-primary);
     border-radius: var(--border-rounded-lg);
     transition: all 0.15s ease-out;
     z-index: 2;
 }
 
 .hero__btn-dark {
-    color: #fff;
-    background-color: #000;
+    color: var(--color-surface);
+    background-color: var(--color-primary);
 }
 
 .hero__btn-light:hover {
-    color: #fff;
-    background-color: #000;
+    color: var(--color-surface);
+    background-color: var(--text-main);
 }
 
 /****************************
@@ -185,7 +193,7 @@ h2 {
 }
 
 .projects__header > p {
-    color: #333;
+    color: var(--text-light);
 }
 
 .chip-fieldset {
@@ -205,7 +213,7 @@ h2 {
 
 .chip-group__label {
     letter-spacing: 0.5px;
-    background-color: #eee;
+    background-color: var(--color-secondary);
     padding: var(--spacing-2) var(--spacing-6);
     border-radius: var(--border-rounded-full);
     cursor: pointer;
@@ -217,13 +225,13 @@ h2 {
 }
 
 .chip-group__input:checked + .chip-group__label {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
 }
 
 .chip-group__disabled {
     letter-spacing: 0.5px;
-    background-color: #eee;
+    background-color: var(--color-secondary);
     padding: var(--spacing-2) var(--spacing-6);
     border-radius: var(--border-rounded-full);
     user-select: none;
@@ -306,33 +314,33 @@ h2 {
     gap: var(--spacing-2);
     padding: var(--spacing-3) var(--spacing-4);
     border-radius: var(--border-rounded-lg);
-    border: 1px solid #000;
+    border: 1px solid var(--color-primary);
     transition: all 0.15s ease-out;
 }
 
 .card__btn:first-of-type {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
 }
 
 .card__btn:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
 }
 
 .card__btn.card__btn-single {
     grid-column: 1 / span 2;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--color-surface);
+    color: var(--text-main);
 }
 
 .card__btn.card__btn-single:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
 }
 
 .card__btn-img-visit {
-    color: #fff;
+    color: var(--color-surface);
     height: 16px;
     width: 16px;
     transition: all 0.15s ease-out;
@@ -341,12 +349,12 @@ h2 {
 .card__btn-img-github {
     height: 24px;
     width: 24px;
-    fill: #000;
+    fill: var(--color-primary);
     transition: all 0.15s ease-out;
 }
 
 .card__btn:hover .card__btn-img-github {
-    fill: #fff;
+    fill: var(--color-surface);
 }
 
 .card--hidden {
@@ -378,8 +386,8 @@ h2 {
 .resume__container h3 {
     margin-top: var(--spacing-16);
     font-size: var(--font-2xl);
-    color: #fff;
-    background-color: #000;
+    color: var(--color-surface);
+    background-color: var(--color-primary);
     padding: 0 var(--spacing-1);
 }
 
@@ -440,10 +448,10 @@ h2 {
     margin-top: var(--spacing-3);
     margin-right: auto;
     margin-left: auto;
-    background-color: #000;
+    background-color: var(--color-primary);
     padding: var(--spacing-2) var(--spacing-9);
     border-radius: var(--border-rounded-lg);
-    color: #fff;
+    color: var(--color-surface);
     font-size: var(--font-sm);
 }
 
@@ -472,6 +480,12 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
+}
+
+[data-dark="true"]
+.card__inline-link::after,
+.inline-link::after {
+    filter: invert(1);
 }
 
 /***************************
@@ -509,13 +523,13 @@ h2 {
     width: 100%;
     margin-top: var(--spacing-1);
     padding: var(--spacing-2);
-    background-color: #f5f5f5;
+    background-color: var(--color-surface-secondary);
     border: 1px solid #ddd;
     border-radius: var(--border-rounded-sm);
 }
 
 .contact__form input:focus {
-    outline: 2px solid #000;
+    outline: 2px solid var(--color-primary);
 }
 
 .contact__form textarea {
@@ -523,13 +537,13 @@ h2 {
     width: 100%;
     margin-top: var(--spacing-1);
     padding: var(--spacing-2);
-    background-color: #f5f5f5;
+    background-color: var(--color-surface-secondary);
     border: 1px solid #ddd;
     border-radius: var(--border-rounded-sm);
 }
 
 .contact__form textarea:focus {
-    outline: 2px solid #000;
+    outline: 2px solid var(--color-primary);
 }
 
 .svg-small {
@@ -546,7 +560,7 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: var(--spacing-4);
-    background-color: #f5f5f5;
+    background-color: var(--color-surface-secondary);
     font-size: var(--font-sm);
 }
 
