@@ -74,9 +74,10 @@ main {
 .hero {
     padding: var(--spacing-12) 0;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: var(--spacing-2);
+    grid-template-columns: 5fr 6fr;
+    column-gap: var(--spacing-9);
     align-items: center;
+    justify-items: flex-end;
 }
 
 @media (max-width: 1024px) {
